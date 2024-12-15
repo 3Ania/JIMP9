@@ -20,7 +20,7 @@ int main(int argc, char ** argv) {
 	if(res == 1) printf("Wystapil blad");
 	printToScreen(A);
 	x = createMatrix(b->r, 1);
-	if (x != NULL) {
+        if (x != NULL) {
 		res = backsubst(x,A,b);
 
 		printToScreen(x);
@@ -28,7 +28,7 @@ int main(int argc, char ** argv) {
 	} else {
 		fprintf(stderr,"Błąd! Nie mogłem utworzyć wektora wynikowego x.\n");
 	}
-
+      
 	freeMatrix(A);
 	freeMatrix(b);
 
